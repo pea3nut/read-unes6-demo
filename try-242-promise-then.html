@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    document.addEventListener('mousedown',function(){
+        console.log('mouse down');
+        Promise.resolve().then(function(){
+            console.log('then');
+        });
+    });
+    document.addEventListener('click',function(){
+        console.log('click');
+    });
+</script>
+</body>
+</html>
